@@ -1,0 +1,44 @@
+.box{
+
+ 	color: black;
+ 	border-bottom: 	 #804000 solid;
+     padding: 20px;
+     padding-top: 25px;
+     padding-bottom: 35px;
+     margin:20px;
+     align-content: center;
+}
+.container {
+  
+    height:100%;
+   
+    margin-top: 30px;
+    background-color: white;
+    padding-bottom:25px;
+    font-family: Arial,helvetica;
+    font-size: 20px;
+    margin: 0 auto;
+    align-content: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    align-content: center;
+}
+.grid-item {
+
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+  }
+  .btt{
+    background-color:#b30047;
+    border-radius: 20px;
+  }
+  h3{
+      padding-top: 25px;
+      padding-bottom: 25px;
+  }

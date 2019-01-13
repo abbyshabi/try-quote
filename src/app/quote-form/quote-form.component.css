@@ -1,0 +1,26 @@
+button{
+    background-color:  #b30047;
+    border-radius: 25px;
+}
+label{
+    font-size: 70%;
+    font-style: italic;
+}
+input{
+    font-size: 60%;
+    font-weight: 100; 
+    font-style: italic;
+}
+[hidden]{
+  font-size: 40%;
+}
+p{
+    font-size: 40%;
+}
+.alert{
+    height: 15%;
+}.warn{
+    padding-top: 15px;
+    background-color: crimson;
+    
+}

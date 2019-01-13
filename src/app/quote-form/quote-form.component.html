@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        
+        <form #quoteForm='ngForm'>
+            <!-- Name Form -->
+            <div class="form-group">
+                <label for="name">Title : </label>
+                <input type="text"  placeholder="enter title" class="form-control" id="name" [(ngModel)]="newQuote.title" name="name" #name="ngModel" required>
+                
+                <div [hidden]="name.valid || name.pristine" class="warn">
+                    <p> Name is Required</p>
+                    
+                </div>
+            </div>
+            <!-- Description Input -->
+            <div class="form-group">
+                <label for="description">Quote :  </label>
+                <textarea class="form-control" cols="14" rows="1" placeholder="enter quote" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+                <div [hidden]="description.valid || description.pristine" class="warn">
+                    <p> Quote is Required</p>
+                    
+                </div>
+                
+            </div>
+
+            <div class="form-group">
+                <label for="author">By : </label>
+                <input type="text" placeholder="author's name" class="form-control" id="author" rows="4" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required>
+                <div [hidden]="author.valid || author.pristine" class=" warn">
+                    <p> Author's name is required</p><br><br>
+                    
+                </div>
+                
+            </div><br>
+            
+            <!-- Date Input -->
+            <div class="form-group">
+                <label for="complete">Date :  </label><br> 
+                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required >
+                <div [hidden]="completeDate.valid || completeDate.pristine" class="warn">
+                    <p>Date is Required</p>
+                    
+                </div>
+            </div>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+            <button type="Submit" class="">Submit Quote</button>
+            </form>
+       
+                    
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<h3> <b><i> {{quote.description}} </i></b></h3>
+<p>{{quote.author}}</p>
+<p>posted {{quote.completeDate|dateCount }} days ago</p>
+
+
+<button (click) = 'quoteDelete(true)'> Delete  </button>
+<button (click) = 'quoteComplete(true)'> Read </button>
+
+<button (click) ="like()" id= "button1" > <img src="assets/uo.png"> {{likeCount}}</button>
+<button (click) ="dislike()"  id= "button" > <img src="assets/down.jpeg">  {{dislikeCount}} </button>

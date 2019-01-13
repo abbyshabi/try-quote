@@ -1,0 +1,19 @@
+  <div class="container">
+      <h3>Best Quotes Ever! </h3>
+    <div class="grid-container">
+        <div class="grid-item">
+            <ul>
+                <div class="box" *ngFor='let quote of quotes ; let i = index'>
+                 {{quote.title}} <br>
+                 <button class="btt" (click)='toogleDetails(i)'>View Quote</button>
+                 <app-quote-details *ngIf="quote.showDescription" [quote] ='quote' (isComplete)= 'completeQuote($event,i)' (toDelete)= 'deleteQuote($event,i)'></app-quote-details>
+                </div>
+              </ul>
+        </div>
+        <div class="grid-item">
+            <app-quote-form (addQuote) = "addNewQuote($event)"></app-quote-form>
+        </div>
+    </div>
+</div>
+
+
